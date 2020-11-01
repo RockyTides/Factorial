@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class Factorial
+{
+   //This program is going to take any number equal to or less than 20 and give n!
+   //Might need a for loop
+   public static void main(String[] args){
+   int n;
+   int endRes = 1;
+   System.out.print("Enter an integer that's 20 or less but, not less than 1: ");
+   Scanner input = new Scanner(System.in);
+   n = input.nextInt();
+   
+   if (n <= 20 && n >= 1) {
+       System.out.println("You entered a valid number. Proceeding.");
+       
+       for (int i = n; i > 0; i--){
+           System.out.println(i);
+           System.out.println("x1: " + endRes);
+           endRes = endRes * i;
+           System.out.println("x2: " + endRes);
+        }
+        System.out.println(endRes);
+       
+    }
+       
+    }
+   
+}
